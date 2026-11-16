@@ -1,107 +1,28 @@
-# Christopher Hunter's portfolio site
+# Christopher Hunter
 
-A dependency-free, 90s-inspired portfolio for GitHub Pages. Intended URL: https://mrkisp.github.io/
+**Technical designer / gameplay engineer**  
+University of Utah B.S. Computer Science, Games Emphasis | Honors College | Expected May 2027
 
-## What's included
+[Portfolio website](https://mrkisp.github.io/) | [itch.io](https://totsugekisp.itch.io/) | [LinkedIn](https://www.linkedin.com/in/j-christopher-hunter-b184b5393/) | [Resume PDF](https://mrkisp.github.io/assets/Christopher_Hunter_Resume.pdf)
 
-- **index.html** - page content and the In progress / Completed projects sections.
-- **styles.css** - layout and retro styling.
-- **custom.css** - the wallpaper and colors you can change in one place.
-- **media.js** - image, GIF, MP4, and YouTube entries for each project's gallery.
-- **site.js** - gallery controls.
-- **assets/** - illustrated covers, wallpaper, favicon, and a copy of your resume.
+I build gameplay systems and playable spaces, from early level blockouts to combat encounters and code. My work spans Godot, Unity, Unreal Engine, and GameMaker.
 
-The cover illustrations are decorative artwork, not gameplay screenshots. Replace or supplement them with your own media.
+## In progress
 
-## Publish on GitHub Pages
+**[Sloppy Dungeon](https://mrkisp.github.io/#sloppy-dungeon)** - Closed-beta 2.5D pixel roguelite. I design encounters, biomes, and buildcrafting systems; program weapon logic, boss banes, and parts of enemy AI in GDScript; and create pixel art. [Gameplay clip](https://youtu.be/G7Oo46WxifE).
 
-1. Sign in to GitHub as **mrKisp**. Create a new **public** repository named **mrkisp.github.io**. The Pages repository name must be lowercase because your username contains an uppercase letter. Leave the repository empty.
-2. Upload the *contents* of this folder to the repository root, including index.html, custom.css, media.js, site.js, styles.css, .nojekyll, and the entire assets folder. Do not upload the ZIP as one file. If your browser will not keep the folder structure, use Git or GitHub Desktop.
-3. Open **Settings > Pages** in the repository. Under **Build and deployment**, choose **Deploy from a branch**, then select **main** and **/(root)**. Click **Save**.
-4. Visit **https://mrkisp.github.io/**. GitHub says publishing can take up to 10 minutes. In **Settings > Pages**, enable **Enforce HTTPS** when available.
-5. Add the site URL to your GitHub profile Website field. You can pin the Pages repository and TeamSix.
+## Completed projects
 
-Or, after creating the empty repository, run these commands from this folder:
+**[Quick, Hide the Booze!](https://mrkisp.github.io/#quick-hide-the-booze)** - Five-person Unity project. I led engineering and technical design, built the core trash-disposal and scoring systems, plus throwing, movement, controller support, and power-ups. [Playable build](https://meepo-productions.itch.io/quick-hide-the-booze). My contribution is complete; the itch.io page may still label the game In development.
 
-~~~bash
-git init
-git branch -M main
-git add .
-git commit -m "Launch portfolio"
-git remote add origin https://github.com/mrKisp/mrkisp.github.io.git
-git push -u origin main
-~~~
+**[Solarian](https://mrkisp.github.io/#solarian)** - Released educational GameMaker space adventure. I pitched the team-adopted concept and implemented level blockouts, planetary and space traversal, asteroids, state-preserving transitions, and checkpoints. [Play on itch.io](https://themasterlight.itch.io/solarian) | [TeamSix source](https://github.com/mrKisp/TeamSix).
 
-For later updates:
+## Tools and interests
 
-~~~bash
-git add .
-git commit -m "Update portfolio"
-git push
-~~~
+- **Code:** GDScript, C/C++, C#, Java, Python, Unreal Engine Blueprints
+- **Engines:** Godot, Unity, Unreal Engine, GameMaker
+- **Design and art:** Level blockouts, encounter and systems design, Aseprite, Maya, Blender, Photoshop
 
-Official instructions: [Pages quickstart](https://docs.github.com/en/pages/quickstart), [publishing source](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site), [profile README](https://docs.github.com/en/account-and-profile/how-tos/profile-customization/managing-your-profile-readme).
+I am also building player dialogue systems in Unreal Engine Blueprints for my current capstone.
 
-## Add the GitHub profile overview
-
-A separate file, **GitHub_Profile_README.md**, is provided alongside the site download. Create another public repository named **mrKisp** (matching your GitHub username exactly), add a root file named **README.md**, and paste in the contents of GitHub_Profile_README.md. GitHub will display that README at the top of your profile. Publish the Pages site first so its links work.
-## Change your wallpaper and colors
-
-1. Put your own background image or GIF in the assets folder, for example **assets/my-wallpaper.gif**.
-2. Open **custom.css** and change the wallpaper line:
-
-~~~css
---wallpaper-image: url("assets/my-wallpaper.gif");
-~~~
-
-3. Change **--wallpaper-size** to control the repeating tile. The color variables in custom.css are also yours to edit. They override the defaults in styles.css.
-4. Commit and push. The content panels stay opaque so text remains readable over the background.
-
-## Add screenshots, GIFs, and clips
-
-1. Put media in **assets/media/sloppy/**, **assets/media/quick/**, or **assets/media/solarian/**.
-2. Open **media.js** and add entries to the matching project's array. Keep the cover entry first if you want it as the initial gallery view. Example:
-
-~~~js
-quick: [
-  {
-    type: "cover",
-    src: "assets/cover-quick.svg",
-    alt: "Illustrated portfolio cover for Quick, Hide the Booze!",
-    caption: "Illustrated cover art"
-  },
-  {
-    type: "image",
-    src: "assets/media/quick/cleanup.webp",
-    alt: "Dorm room before the cleanup timer ends",
-    caption: "Timed cleanup level"
-  },
-  {
-    type: "gif",
-    src: "assets/media/quick/throw.gif",
-    alt: "Player throwing an item across the dorm room",
-    caption: "Long-range throwing mechanic"
-  },
-  {
-    type: "video",
-    src: "assets/media/quick/playtest.mp4",
-    poster: "assets/media/quick/playtest-poster.webp",
-    alt: "Gameplay clip of the trash disposal system",
-    caption: "Core disposal loop"
-  }
-],
-~~~
-
-3. Commit and push. Gallery arrows and thumbnails appear automatically when a project has more than one item.
-
-Use **image** for PNG/JPEG/WebP, **gif** for GIF, **video** for MP4, and **youtube** with an id for a YouTube clip. Write alt text that describes what is visible. Use short MP4s for longer motion clips so the page stays quick to load. You can remove the decorative cover entry after adding gameplay media.
-
-## Edit projects
-
-Project text is in **index.html**. Copy an article block to add a project, assign a new project id and gallery key, add that key's array in media.js, and update the visible section count.
-
-Sloppy Dungeon is In progress. Quick, Hide the Booze! is under Completed because your contribution is complete, while its itch.io page may still say In development.
-
-## Preview before publishing
-
-Double-click **index.html** to open it in a browser. The YouTube clip needs internet; the rest of the site works locally. Check desktop and phone widths when adding large media.
+**Contact:** [j.christopher.hunter10@gmail.com](mailto:j.christopher.hunter10@gmail.com)
