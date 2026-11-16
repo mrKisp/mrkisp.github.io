@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="Abstract solar system exploration illustration">
+<defs>
+  <linearGradient id="space" x2="1" y2="1"><stop stop-color="#101d36"/><stop offset=".6" stop-color="#1a3753"/><stop offset="1" stop-color="#294c6b"/></linearGradient>
+  <radialGradient id="sun"><stop stop-color="#fff1a8"/><stop offset=".48" stop-color="#f5b660"/><stop offset="1" stop-color="#ce6954"/></radialGradient>
+  <radialGradient id="planet"><stop stop-color="#9fd8c9"/><stop offset="1" stop-color="#3d859b"/></radialGradient>
+  <pattern id="stars" width="135" height="105" patternUnits="userSpaceOnUse"><circle cx="18" cy="22" r="2" fill="#fff"/><circle cx="104" cy="65" r="3" fill="#fff" opacity=".6"/><circle cx="70" cy="9" r="1.5" fill="#fff" opacity=".7"/></pattern>
+</defs>
+<rect width="1200" height="720" fill="url(#space)"/><rect width="1200" height="720" fill="url(#stars)" opacity=".8"/>
+<circle cx="300" cy="515" r="310" fill="url(#sun)"/>
+<path d="M17 565c119-62 284-78 454-20M0 606c158-60 328-53 473 7" fill="none" stroke="#f9d092" stroke-width="14" opacity=".45"/>
+<circle cx="885" cy="265" r="126" fill="url(#planet)"/>
+<path d="M754 300c104-55 227-61 343-18" fill="none" stroke="#b7e3d5" stroke-width="22" opacity=".55"/>
+<circle cx="1020" cy="575" r="59" fill="#bc748f"/><circle cx="1001" cy="552" r="14" fill="#e7adc0" opacity=".65"/>
+<path d="M588 130c115-80 276-100 411-55M548 655c182 45 380 4 510-117" fill="none" stroke="#9ec9d4" stroke-width="3" stroke-dasharray="10 13" opacity=".47"/>
+<path d="M600 310l124-43-62 92-57-16-55 47z" fill="#f0e7cf" stroke="#3c5e77" stroke-width="12"/>
+<path d="M622 318l58-22-33 41z" fill="#d67264"/>
+<path d="M550 390l34-55 20 8z" fill="#ffb579"/>
+<path d="M535 405l30-43 17 9z" fill="#ffe5ae" opacity=".8"/>
+<path d="M115 140h23M126 129v23M1090 119h20M1100 109v20M680 620h22M691 609v22" stroke="#fbe7c6" stroke-width="6" stroke-linecap="round"/>
+<path d="M1090 390l36-20 33 22-23 31-36-5zM754 560l23-17 30 12-9 28-30 5z" fill="#6c8295" stroke="#b4bcc1" stroke-width="5"/>
+</svg>

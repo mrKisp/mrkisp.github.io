@@ -1,0 +1,23 @@
+/*
+  CUSTOMIZE YOUR 90s WALLPAPER HERE
+  1. Put your own image or GIF in the assets folder.
+  2. Change --wallpaper-image to url("assets/your-file.gif").
+  3. Adjust --wallpaper-size, colors, and panel colors as you like.
+  Changes here override styles.css without touching the layout rules.
+*/
+:root {
+  --wallpaper-image: url("assets/background-tile.svg");
+  --wallpaper-color: #25245a;
+  --wallpaper-size: 180px 180px;
+  --panel: #fff8df;
+  --panel-light: #fffdf3;
+  --ink: #242243;
+  --text: #343454;
+  --link: #123cc2;
+  --link-hover: #b00074;
+  --pink: #ff4ea3;
+  --teal: #1fc3bd;
+  --yellow: #ffe16b;
+  --purple: #6553aa;
+  --blue: #4b67cc;
+}
