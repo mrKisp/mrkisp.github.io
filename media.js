@@ -34,18 +34,25 @@ window.PORTFOLIO_MEDIA = {
   ],
   quick: [
     {
-      type: "cover",
-      src: "assets/cover-quick.svg",
-      alt: "Illustrated portfolio cover for Quick, Hide the Booze!",
-      caption: "Illustrated cover art"
+      type: "image",
+      src: "assets/media/quick/quick-title.png",
+      alt: "Cover for Quick, Hide the Booze!",
+      caption: "Title card for Quick, Hide the Booze!"
+    },
+        {
+      type: "youtube",
+      id: "wonXplRT9ao",
+      poster: "assets/media/quick/quick-kitty.png",
+      alt: "Open the Quick, Hide the Booze! release trailer",
+      caption: "Release trailer"
     }
   ],
   solarian: [
     {
-      type: "cover",
-      src: "assets/cover-solarian.svg",
-      alt: "Illustrated portfolio cover for Solarian",
-      caption: "Illustrated cover art"
+      type: "image",
+      src: "assets/media/solarian/cover-solarian.png",
+      alt: "Cover for Solarian",
+      caption: "Title card for Solarian"
     }
   ]
 };
